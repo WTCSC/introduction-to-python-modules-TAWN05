@@ -20,11 +20,11 @@ def count_sentences(text):
     return num_sentences
 
 def count_lines(text):
-    # Defines filename = "sample.txt"
+    # Defines filename = "sample.txt".
     filename = "sample.txt"
-    # Opens filename(sample.txt) as file 
+    # Opens filename(sample.txt) as file.
     with open(filename) as file:
-        # Defines lines = to read the lines of file
+        # Defines lines = to read the lines of file.
         lines = file.readlines()
-    #return the length of lines 
+    # Return the length of lines.
     return len(lines)

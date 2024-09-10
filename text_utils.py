@@ -4,7 +4,7 @@ def count_chars(text):
 
 
 def count_words(text):
-    # returns length of text split into words.
+    # Returns length of text split into words.
     return len(text.split())
     
 def count_sentences(text):
@@ -20,5 +20,11 @@ def count_sentences(text):
     return num_sentences
 
 def count_lines(text):
-    # Returns the number of lines in context of text
-    return len(text.readlines())
+    # Defines filename = "sample.txt"
+    filename = "sample.txt"
+    # Opens filename(sample.txt) as file 
+    with open(filename) as file:
+        # Defines lines = to read the lines of file
+        lines = file.readlines()
+    #return the length of lines 
+    return len(lines)
